@@ -1,0 +1,19 @@
+h1 {
+  font-size: 50px;
+  color: blue;
+  text-align: center;
+}
+
+#date {
+  text-align: right;
+  color: gray;
+}
+
+.red {
+  color: red;
+  font-weight: bolder;
+}
+
+body {
+  background-color: rgb(218, 218, 218);
+}
