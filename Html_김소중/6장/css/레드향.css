@@ -1,0 +1,17 @@
+h1, p {
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.red {
+  color: red;
+}
+
+#a {
+  border: 2px dotted red;
+  color: blue;
+}
