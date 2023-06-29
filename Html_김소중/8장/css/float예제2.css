@@ -1,0 +1,30 @@
+
+body {
+  background-color: lightgray;
+}
+div {
+  text-align: center;
+  line-height: 100px;
+}
+#box1 {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+#box2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+#box3 {
+  background-color: green;
+  width: 500px;
+  height: 100px;
+}
+#box4 {
+  background-color: purple;
+  width: 500px;
+  height: 100px;
+}
