@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+}
+#signup ul li {
+  line-height: 25px;
+  list-style: none;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+#signup{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  margin: 30px auto;
+}
+#signup label {
+  float: left;
+  font-size: 13px;
+  width: 110px;
+}
+#signup fieldset {
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+#signup fieldset ul {
+  margin: 10px;
+}
+#signup fieldset button {
+  border: 1px solid black;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+  padding: 7px 25px;
+  font: 16px '맑은 고딕', 굴림, 돋움;
+  letter-spacing: 1px;
+}
+#signup fieldset legend{
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
