@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>속성 선택자</title>
+  <style>
+    /* *{
+      margin: 0;
+      padding: 0;
+    } */
+    ul {
+      list-style: none;
+      margin-left: -30px;
+    }
+    ul li a {
+      color: black;
+      text-decoration: none;
+    }
+    ul li {
+      display: inline-block;
+    }
+    a[href] {
+      padding: 5px 30px;
+      margin: 0 20px;
+      background-color: yellow;
+      border: 1px solid black;
+    }
+    [class ~= "button"] {
+      box-shadow: rgba(0, 0, 0, 0.4) 4px 4px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#" class="flat">정치</a></li>
+    <li><a href="#" class="flat">경제</a></li>
+    <li><a href="#" class="button">사회</a></li>
+    <li><a href="#" class="flat button">문화</a></li>
+  </ul>
+</body>
+</html>
