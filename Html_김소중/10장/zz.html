@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>dd</title>
+  <link rel="stylesheet" href="css/zz.css">
+</head>
+
+<body>
+  <div class="head">
+    <ul>
+      <li><a href="#">이용 안내</a></li>
+      <li><a href="#rara">객실 소개</a></li>
+      <li><a href="#">예약 방법 및 요금</a></li>
+      <li><a href="#">예약하기</a></li>
+    </ul>
+  </div>
+  <form class="sub">
+    <fieldset>
+      <legend>개인 정보</legend>
+      <table>
+        <tr>
+          <td>이름</td>
+          <td>
+            <input type="text" size="25">
+          </td>
+        </tr>
+        <tr>
+          <td>연락처</td>
+          <td>
+            <input type="text" size="25">
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset id="rara">
+      <legend>객실 형태</legend>
+      <ul>
+        <li>
+          <input type="radio" name="name" id="basic">
+          <label for="basic">기본형(최대 2인)</label>
+        </li>
+        <li>
+          <input type="radio" name="name" id="family">
+          <label for="family">가족형(최대 8인)</label>
+        </li>
+      </ul>
+    </fieldset>
+    <div class="bu">
+      <button type="submit">제출</button>
+    </div>
+  </form>
+</body>
+
+</html>
