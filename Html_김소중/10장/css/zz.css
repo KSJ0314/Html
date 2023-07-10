@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +8,12 @@ ul {
   list-style: none;
 }
 
-a:hover {
+a:hover, a:focus {
   background-color: black;
   color: white;
+}
+a:active{
+  color: red;
 }
 
 #rara:target {
@@ -56,23 +60,41 @@ td,
   padding: 10px;
 }
 
-table {
-}
-.bu {
-  text-align: center;
-}
-
 button {
   width: 80px;
   padding: 5px;
   border-radius: 20px;
   border: 1px solid;
+  letter-spacing: 1px;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  font-family: 'Bagel Fat One', cursive;
+}
+
+button:active{
+  background-color: gray;
 }
 
 .sub input:focus{
   background-color: yellow;
 }
 
+.sub input:not([radio]){
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 3px;
+}
+.sub input:not([radio]):hover {
+  border-color: red;
+}
+
 input:checked + label {
   color: red;
+  font-weight: bold;
+}
+
+.sub legend {
+  font: 16px bold;
+  padding: 0 5px 10px;
 }
