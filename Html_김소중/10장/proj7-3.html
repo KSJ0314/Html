@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin: 10px;
+    }
+
+    h2 {
+      line-height: 3em;
+    }
+
+    .container form {
+      width: 570px;
+    }
+
+    .container li {
+      list-style: none;
+      border-bottom: 1px solid gray;
+      padding: 10px;
+    }
+
+    .container li:first-of-type {
+      border-top: 5px solid black;
+    }
+
+    .container li label {
+      float: left;
+      width: 100px;
+      line-height: 32px;
+    }
+    .container li:last-child label {
+      line-height: 37px;
+    }
+
+    .container input {
+      padding: 5px;
+      font-size: 15px;
+    }
+
+    .container li:nth-child(3) label {
+      line-height: 107px;
+    }
+
+    textarea {
+      width: 435px;
+      height: 100px;
+    }
+
+    .container input[readonly] {
+      border: none;
+    }
+
+    button {
+      padding: 5px 20px;
+      margin: 20px 5px;
+    }
+    #buttons {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>게시판 글쓰기 폼</h2>
+    <form>
+      <ul>
+        <li>
+          <label for="name">이름</label>
+          <input id="name" type="text" value="홍길동" readonly>
+        </li>
+        <li>
+          <label for="head">제목</label>
+          <input id="head" type="text" size="49">
+        </li>
+        <li>
+          <label for="content">글 내용</label>
+          <textarea></textarea>
+        </li>
+        <li>
+          <label for="fi">파일</label>
+          <input id="fi" type="file">
+        </li>
+      </ul>
+      <div id="buttons">
+        <button>저장하기</button>
+        <button>목록보기</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container ul {
+      list-style: none;
+      width: 600px;
+      height: 42px;
+      margin: 30px auto;
+      box-shadow: 10px 10px 5px gray;
+    }
+    .container ul li {
+      box-sizing: border-box;
+      float: left;
+      line-height: 2em;
+      text-align: center;
+      padding: 5px;
+      width: 100px;
+      background-color: lightgray;
+      border-right: 1px solid black;
+    }
+    .container ul li:hover {
+      background-color: #555;
+      color: white;
+    }
+    .container ul li:last-of-type {
+      border: none;
+    }
+    .container ul li:last-of-type:hover {
+      background-color: #b30000;
+      color: white;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul>
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+      <li>메뉴4</li>
+      <li>메뉴5</li>
+      <li>메뉴6</li>
+    </ul>
+  </div>
+</body>
+</html>
