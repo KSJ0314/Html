@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>변형3</title>
+  <style>
+    .origin {
+      width: 102px;
+      height: 110px;
+      border: 1px solid black;
+      margin: 30px;
+      float: left;
+    }
+
+    .origin>div {
+      width: 102px;
+      height: 110px;
+    }
+
+    .rotatex:hover {
+      transition: 10s;
+      transform: rotate3d(2.5,1.2,-1.5,10800deg)
+      perspective(300px)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="origin">
+    <div class="rotatex">
+      <img src="images/flog.jpg">
+    </div>
+  </div>
+</body>
+
+</html>

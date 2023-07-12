@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>test</title>
+  <style>
+    .container{
+      width: 1302px;
+      margin: auto;
+    }
+    img {
+      float: left;
+      width: 400px;
+      height: 350px;
+    }
+    #a, #b, #c{
+      float: left;
+      margin-right: 30px;
+      width: 400px;
+      height: 500px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    img:hover + h1, img:hover + h1 + p{
+      display: none;
+    }
+    h1{
+      clear: left;
+      padding: 20px 30px;
+      margin: 0;
+    }
+     p {
+      padding: 0 30px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="a">
+      <img src="images/prod1.jpg">
+      <h1>머니 플랜</h1>
+      <p>은행, 보험, 증권, 신용카드, 채권 모든 금융 정보를 한눈에</p>
+    </div>
+    <div id="b">
+      <img src="images/prod1.jpg">
+      <h1>머니 플랜</h1>
+      <p>은행, 보험, 증권, 신용카드, 채권 모든 금융 정보를 한눈에</p>
+    </div>
+    <div id="c">
+      <img src="images/prod1.jpg">
+      <h1>머니 플랜</h1>
+      <p>은행, 보험, 증권, 신용카드, 채권 모든 금융 정보를 한눈에</p>
+    </div>
+  </div>
+</body>
+</html>
