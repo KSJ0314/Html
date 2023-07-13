@@ -3,14 +3,22 @@
 <head>
   <title>변형6</title>
   <style>
+      @keyframes trans {
+      0%{}
+      50%{
+        transform: translateX(100px);
+      }
+      100%{
+        transform: translateY(100px);
+      }
+    }
     #a {
       width: 200px;
       height: 200px;
       background-color: skyblue;
     }
     #a:hover {
-      transition: rotate 1s 1s;
-      transform: translateX(100px) translateY(100px);
+      animation: "trans" 1s 1s;
       background-color: blue;
     }
   </style>
