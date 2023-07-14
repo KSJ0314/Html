@@ -6,22 +6,26 @@
   <style>
     @keyframes move {
       50% {
-        transform: translateX(100px);
+        /* transform: translateX(100px); */
       }
       100% {
         transform: translateX(100px) translateY(100px);
+        transform: rotate(360deg);
       }
     }
 
     #a {
+      margin: 100px;
       width: 200px;
       height: 200px;
       background-color: skyblue;
     }
 
     #a:hover {
-      animation: move 1s;
+      animation: move .5s;
       animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
       background-color: blue;
     }
   </style>

@@ -1,0 +1,45 @@
+#container {
+  width:1000px;
+  margin:20px auto;
+}
+h1 {
+  text-align:center;
+}
+.prod-list {
+  list-style:none;
+  padding:0;
+}
+.prod-list li {
+  text-align: center;
+  border: 1px solid gray;
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;     /* 범위 넘어간거 숨김 */
+  position: relative;
+}
+.prod-list img {
+  width: 300px;
+  height: 320px;
+  margin:0;
+  padding:0;
+  float:left;
+  z-index:5;    /* 개체가 겹칠 때  표시 순서 지정 */
+} 
+.prod-list li .caption {
+  position: absolute;
+  overflow: hidden;
+  top: 200px;
+  width: 300px;
+  height: 200px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  z-index: 10;
+}
+.prod-list li:hover .caption{
+  opacity: 1;
+  transition: 0.6s ease-in-out;
+  transform: translateY(-100px);
+}
