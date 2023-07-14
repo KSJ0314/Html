@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>애니메이션</title>
+  <style>
+    .box{
+      width: 200px;
+      height: 200px;
+      margin: 30px;
+      background-color: blue;
+    }
+    @keyframes box1 {
+      50%{
+        transform: translateX(100px);
+      }
+      100%{
+        transform: translateX(100px) translateY(100px) rotate(360deg);
+      }
+    }
+    #box1:hover{
+      animation: box1 1s infinite;
+    }
+    @keyframes box2 {
+      25%{
+        transform: translateX(100px) rotateY(180deg);
+      }
+      50%{
+        transform: translateX(100px) translateY(100px) rotateY(180deg) rotateX(180deg);
+      }
+      75%{
+        transform: translateY(100px) rotateX(180deg);
+      }
+    }
+    #box2{
+      animation: box2 2s infinite;
+    }
+    #box2:hover{
+      animation: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+</body>
+</html>
