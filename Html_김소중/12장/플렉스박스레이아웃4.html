@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: lightgray;
+      border: 1px solid black;
+      margin-bottom: 30px;
+      height: 150px;
+      width: 450px;
+      align-items: center;
+    }
+    .box{
+      padding: 5px 45px;
+      margin: 5px;
+      background-color: black;
+      font-size: 20px;
+    }
+    p{
+      color: white;
+      text-align: center;
+    }
+    #box1 {
+      align-self: flex-start;
+    }
+    #box3 {
+      align-self: stretch;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="opt1">
+    <div class="box" id="box1"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box" id="box3"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>
+</body>
+
+</html>
